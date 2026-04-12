@@ -1,0 +1,438 @@
+<!-- 
+  ══════════════════════════════════════════════════════════
+  SEO — RANK MATH SETTINGS FOR THIS PAGE
+  Set these in Rank Math (WordPress admin → Rank Math → Edit Snippet):
+  
+  Title:       About Teresa | Board Ready Beauty — Texas Cosmetology Exam Educator
+  Description: Meet Teresa, lead educator at Board Ready Beauty. 35+ years of cosmetology experience. Sassoon trained, Pivot Point certified, Wella Color certified. DFW Texas state board exam specialist.
+  Keywords:    Teresa Board Ready Beauty, Texas cosmetology educator, state board exam educator DFW, cosmetology exam prep teacher
+
+  Also set in WordPress Page settings:
+  - Page title (H1 is in the HTML below — do NOT add a duplicate title in GP)
+  - Make sure GeneratePress page title header is HIDDEN (already configured in Additional CSS)
+  ══════════════════════════════════════════════════════════
+-->
+<style>
+/* ── BOARD READY BEAUTY — About Teresa Page ── */
+:root {
+  --rose: #c8185a;
+  --rose-dark: #a01248;
+  --rose-light: #fbeef4;
+  --gold: #c49a2a;
+  --gold-light: #fdf6e3;
+  --cream: #fdf9f6;
+  --charcoal: #1e1a20;
+  --muted: #6b6170;
+  --border: #ecdde5;
+  --white: #ffffff;
+}
+/* ── MOBILE VIEWPORT FIX (Galaxy Z Flip / narrow screens) ── */
+html, body { max-width: 100% !important; overflow-x: hidden !important; }
+* { min-width: 0; }
+img { max-width: 100%; height: auto; }
+.page .entry-content, .entry-content, .inside-article {
+  padding: 0 !important; margin: 0 !important; max-width: 100% !important; overflow-x: hidden !important;
+}
+
+.page .entry-content, .entry-content, .inside-article {
+  padding: 0 !important; margin: 0 !important; max-width: 100% !important;
+}
+
+/* HERO */
+.abt-hero {
+  background: linear-gradient(135deg, #140f17 0%, #2a1428 60%, #1e1020 100%);
+  padding: 52px 18px 48px; position: relative; overflow: hidden;
+}
+.abt-hero::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,24,90,0.10), transparent 65%); pointer-events: none;
+}
+.abt-hero-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 36px; position: relative; z-index: 1;
+}
+.abt-hero-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+}
+.abt-hero-label::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+.abt-hero h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(32px, 7vw, 62px) !important; line-height: 1.06 !important;
+  letter-spacing: -0.02em !important; color: var(--white) !important; margin-bottom: 20px !important;
+}
+.abt-hero h1 em { font-style: italic; color: #f9a8c0; }
+.abt-hero-sub {
+  font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.6);
+  font-weight: 300; max-width: 520px; margin-bottom: 28px;
+}
+.cred-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.cred-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.8); font-size: 12px; font-weight: 500;
+  padding: 7px 14px; border-radius: 999px;
+}
+.cred-pill::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+/* Photo */
+.abt-photo-wrap { position: relative; max-width: 320px; margin: 0 auto; }
+.abt-photo-wrap img {
+  width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover;
+  object-position: center top; border-radius: 20px; display: block;
+}
+.abt-photo-wrap::after {
+  content: ''; position: absolute; inset: 0; border-radius: 20px;
+  border: 2px solid rgba(196,154,42,0.35); pointer-events: none;
+}
+.abt-photo-badge {
+  position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
+  background: var(--rose); color: var(--white); font-size: 12px; font-weight: 600;
+  padding: 8px 20px; border-radius: 999px; white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(200,24,90,0.3);
+}
+
+/* MAIN */
+.abt-main { max-width: 1100px; margin: 0 auto; padding: 56px 18px 72px; }
+
+/* Stats */
+.abt-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 52px; }
+.stat-box {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 18px; padding: 24px 16px; text-align: center;
+}
+.stat-box::before {
+  content: ''; display: block; width: 36px; height: 3px;
+  background: linear-gradient(90deg, var(--rose), var(--gold));
+  border-radius: 2px; margin: 0 auto 14px;
+}
+.abt-stat-num {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 34px !important; color: var(--charcoal) !important; line-height: 1; margin-bottom: 6px;
+}
+.abt-stat-num span { color: var(--rose); }
+.abt-stat-label { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+/* Story */
+.abt-story-grid { display: flex; flex-direction: column; gap: 40px; margin-bottom: 52px; }
+.story-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--rose); margin-bottom: 10px; display: block;
+}
+.story-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(24px, 5vw, 38px) !important; line-height: 1.12 !important;
+  letter-spacing: -0.02em !important; color: var(--charcoal) !important; margin-bottom: 18px !important;
+}
+.story-body p { font-size: 15px; line-height: 1.85; color: var(--muted); margin-bottom: 16px; font-weight: 300; }
+.story-body p:last-child { margin-bottom: 0; }
+.story-body strong { color: var(--charcoal); font-weight: 600; }
+.pull-quote {
+  background: var(--rose-light); border-left: 4px solid var(--rose);
+  border-radius: 0 14px 14px 0; padding: 20px 22px; margin: 24px 0;
+}
+.pull-quote p {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 17px !important; font-style: italic; line-height: 1.5;
+  color: var(--rose-dark); margin: 0 !important;
+}
+.creds-title {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 14px; display: block;
+}
+.cred-item {
+  background: var(--white); border: 1px solid var(--border); border-radius: 14px;
+  padding: 16px 18px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start;
+}
+.cred-icon {
+  width: 38px; height: 38px; background: var(--rose-light); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0;
+}
+.cred-item-title { font-size: 14px; font-weight: 600; color: var(--charcoal); margin-bottom: 3px; }
+.cred-item-sub { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+/* Teaches */
+.teaches-section { margin-bottom: 52px; }
+.teaches-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--rose); margin-bottom: 10px; display: block;
+}
+.teaches-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(24px, 5vw, 38px) !important; line-height: 1.12 !important;
+  color: var(--charcoal) !important; margin-bottom: 8px !important;
+}
+.teaches-sub { font-size: 15px; line-height: 1.75; color: var(--muted); font-weight: 300; margin-bottom: 28px; }
+.teaches-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.teach-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: 16px;
+  padding: 18px 16px; position: relative; overflow: hidden; display: flex; gap: 14px; align-items: flex-start;
+}
+.teach-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--rose), var(--gold));
+}
+.teach-icon { font-size: 22px; flex-shrink: 0; padding-top: 2px; }
+.teach-card h4 { font-size: 14px !important; font-weight: 600 !important; color: var(--charcoal) !important; margin-bottom: 4px !important; }
+.teach-card p { font-size: 13px; line-height: 1.65; color: var(--muted); margin: 0; }
+
+/* Why */
+.why-section {
+  background: #140f17; border-radius: 20px; padding: 36px 24px;
+  margin-bottom: 52px; position: relative; overflow: hidden;
+}
+.why-section::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,24,90,0.08), transparent 65%); pointer-events: none;
+}
+.why-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 10px; display: block;
+}
+.why-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(22px, 5vw, 34px) !important; color: var(--white) !important;
+  line-height: 1.15 !important; margin-bottom: 14px !important;
+}
+.why-title em { font-style: italic; color: #f9a8c0; }
+.why-body { font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.6); font-weight: 300; margin-bottom: 20px; }
+.why-points { list-style: none; padding: 0; margin: 0; }
+.why-points li {
+  display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.65;
+  color: rgba(255,255,255,0.75); padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.why-points li:last-child { border-bottom: none; }
+.why-check { color: var(--gold); font-weight: 700; flex-shrink: 0; }
+
+/* CTA */
+.abt-cta {
+  background: linear-gradient(135deg, var(--rose) 0%, #9c1247 100%);
+  border-radius: 20px; padding: 44px 24px; text-align: center; position: relative; overflow: hidden;
+}
+.abt-cta::before {
+  content: ''; position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,0.04);
+}
+.abt-cta h2 {
+  font-family: 'Playfair Display', serif !important; font-size: clamp(24px, 5vw, 42px) !important;
+  color: var(--white) !important; margin-bottom: 12px !important; position: relative;
+}
+.abt-cta p {
+  font-size: 16px; color: rgba(255,255,255,0.75); max-width: 480px;
+  margin: 0 auto 28px; line-height: 1.7; font-weight: 300; position: relative;
+}
+.cta-buttons { display: flex; flex-direction: column; gap: 12px; align-items: center; position: relative; }
+.btn-white {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--white); color: var(--rose); text-decoration: none; font-weight: 700;
+  font-size: 15px; padding: 15px 32px; border-radius: 999px; transition: all .2s; width: 100%; max-width: 320px;
+}
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); color: var(--rose); }
+.btn-outline-white {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4);
+  text-decoration: none; font-weight: 500; font-size: 15px; padding: 15px 28px;
+  border-radius: 999px; transition: all .2s; width: 100%; max-width: 320px;
+}
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: white; color: var(--white); }
+
+/* Animations */
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* TABLET 600px+ */
+@media (min-width: 600px) {
+  .abt-hero { padding: 64px 24px 56px; }
+  .abt-main { padding: 64px 24px 80px; }
+  .abt-stats { grid-template-columns: repeat(4, 1fr); }
+  .teaches-grid { grid-template-columns: 1fr 1fr; }
+  .teach-card { flex-direction: column; }
+  .cta-buttons { flex-direction: row; justify-content: center; }
+  .btn-white, .btn-outline-white { width: auto; max-width: none; }
+}
+
+/* DESKTOP 900px+ */
+@media (min-width: 900px) {
+  .abt-hero { padding: 80px 24px 72px; }
+  .abt-hero-inner { flex-direction: row; align-items: center; gap: 64px; }
+  .abt-hero-copy { flex: 1; }
+  .abt-photo-wrap { width: 380px; flex-shrink: 0; max-width: none; margin: 0; }
+  .abt-photo-wrap img { aspect-ratio: 4/5; }
+  .abt-main { padding: 80px 24px 96px; }
+  .abt-stats { gap: 18px; margin-bottom: 72px; }
+  .abt-stat-num { font-size: 40px !important; }
+  .stat-box { padding: 28px 20px; }
+  .abt-story-grid { flex-direction: row; gap: 64px; }
+  .abt-story-grid > * { flex: 1; }
+  .teaches-grid { grid-template-columns: repeat(3, 1fr); }
+  .teach-card { flex-direction: column; }
+  .why-section { padding: 56px 48px; border-radius: 28px; }
+  .why-inner-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .abt-cta { padding: 56px 48px; border-radius: 24px; }
+  .cta-buttons { flex-direction: row; justify-content: center; }
+  .btn-white, .btn-outline-white { width: auto; }
+}
+</style>
+
+<!-- HERO -->
+<section class="abt-hero">
+  <div class="abt-hero-inner">
+    <div class="abt-hero-copy fade-up visible">
+      <div class="abt-hero-label">Your Educator</div>
+      <h1>Meet <em>Teresa</em> —<br>The Woman Behind<br>Board Ready Beauty</h1>
+      <p class="abt-hero-sub">35+ years behind the chair and as an educator. She's been in that exam room. She knows exactly what it takes to pass — and she built this program to make sure you do.</p>
+      <div class="cred-pills">
+        <span class="cred-pill">Licensed Texas Cosmetologist</span>
+        <span class="cred-pill">Sassoon Trained</span>
+        <span class="cred-pill">Pivot Point</span>
+        <span class="cred-pill">Wella Color Certified</span>
+        <span class="cred-pill">Paul Mitchell Trained</span>
+        <span class="cred-pill">Ogle School Educator</span>
+        <span class="cred-pill">35+ Years Experience</span>
+        <span class="cred-pill">State Board Specialist</span>
+      </div>
+    </div>
+    <div class="abt-photo-wrap fade-up visible">
+      <img src="https://boardreadybeauty.com/wp-content/uploads/2026/03/teresa-image.jpg"
+           alt="Teresa — Lead Educator at Board Ready Beauty, 35+ years cosmetology experience"
+           loading="eager">
+      <div class="abt-photo-badge">Lead Educator · Board Ready Beauty</div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<div class="abt-main">
+
+  <!-- STATS -->
+  <div class="abt-stats fade-up">
+    <div class="stat-box">
+      <div class="abt-stat-num">35<span>+</span></div>
+      <div class="abt-stat-label">Years behind the chair &amp; as an educator</div>
+    </div>
+    <div class="stat-box">
+      <div class="abt-stat-num">5</div>
+      <div class="abt-stat-label">Certifications — Sassoon, Pivot Point, Wella &amp; more</div>
+    </div>
+    <div class="stat-box">
+      <div class="abt-stat-num">3<span>hr</span></div>
+      <div class="abt-stat-label">Intensive practical exam prep class — hands-on</div>
+    </div>
+    <div class="stat-box">
+      <div class="abt-stat-num">1</div>
+      <div class="abt-stat-label">Goal — get your Texas cosmetology license</div>
+    </div>
+  </div>
+
+  <!-- STORY + CREDENTIALS -->
+  <div class="abt-story-grid fade-up">
+    <div class="story-body">
+      <span class="story-label">Teresa's Story</span>
+      <h2 class="story-title">She Knows the Exam<br>From the Inside Out</h2>
+      <p>Teresa has spent over 35 years working behind the chair and as an educator in the beauty industry. Her career has taken her through some of the most respected names in cosmetology education — <strong>Paul Mitchell</strong> and <strong>Ogle School</strong> — and she holds certifications from <strong>Sassoon</strong>, <strong>Pivot Point</strong>, and <strong>Wella Color</strong>, giving her a depth of knowledge that goes far beyond what most students encounter in school.</p>
+      <p>She's seen firsthand what separates students who pass the Texas state board exam from those who don't. And it almost never comes down to skill. <strong>It comes down to preparation.</strong> Knowing the format. Knowing what examiners grade. Knowing how to perform under pressure. Knowing what to bring and how to set up.</p>
+      <div class="pull-quote">
+        <p>"I created Board Ready Beauty because I kept watching talented graduates fail an exam they should have passed — not because they couldn't do the work, but because nobody had properly prepared them for that specific moment."</p>
+      </div>
+      <p>Board Ready Beauty is the program Teresa built to fix that. It's personal, practical, and built around one goal: <strong>getting your Texas cosmetology license.</strong> Her classes are small by design — because every student deserves real attention and real feedback, not a seat in a crowd.</p>
+      <p>She serves cosmetology graduates across the <strong>Dallas–Fort Worth area</strong> and is committed to helping every student who walks through the door walk out more confident, more prepared, and more ready than they've ever been.</p>
+    </div>
+    <div class="creds-col">
+      <span class="creds-title">Credentials &amp; Background</span>
+      <div class="cred-item">
+        <div class="cred-icon">✂️</div>
+        <div><div class="cred-item-title">Sassoon Trained</div><div class="cred-item-sub">Advanced cutting and technique training from one of the most prestigious names in professional hairdressing</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">📐</div>
+        <div><div class="cred-item-title">Pivot Point</div><div class="cred-item-sub">Certified in the Pivot Point method — a globally recognized cosmetology education framework used in top schools worldwide</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🎨</div>
+        <div><div class="cred-item-title">Wella Color Certified</div><div class="cred-item-sub">Professional color certification from Wella — one of the most respected names in professional hair color education</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🎓</div>
+        <div><div class="cred-item-title">Paul Mitchell Trained</div><div class="cred-item-sub">Training and education experience at one of the most respected names in professional cosmetology</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🏫</div>
+        <div><div class="cred-item-title">Ogle School Educator</div><div class="cred-item-sub">Educator-level experience at Ogle School — one of Texas's leading cosmetology institutions</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">📜</div>
+        <div><div class="cred-item-title">Licensed Texas Cosmetologist</div><div class="cred-item-sub">Active TDLR cosmetology license — verified and in good standing with the Texas Department of Licensing and Regulation</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🏆</div>
+        <div><div class="cred-item-title">35+ Years Experience</div><div class="cred-item-sub">Three and a half decades behind the chair and as an educator — hair, skin, nails, chemical services, and client care</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">📍</div>
+        <div><div class="cred-item-title">Dallas–Fort Worth Based</div><div class="cred-item-sub">Serving cosmetology graduates across the DFW metroplex — classes held in the local area</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🎯</div>
+        <div><div class="cred-item-title">Texas State Board Specialist</div><div class="cred-item-sub">Deeply familiar with TDLR requirements, PSI exam format, and the exact practical and written exam standards</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT TERESA TEACHES -->
+  <div class="teaches-section fade-up">
+    <span class="teaches-label">What You'll Learn</span>
+    <h2 class="teaches-title">Every Section. Every Standard. Every Detail.</h2>
+    <p class="teaches-sub">Teresa's practical exam prep class covers the full scope of what the Texas state board tests — so nothing catches you off guard on exam day.</p>
+    <div class="teaches-grid">
+      <div class="teach-card"><div class="teach-icon">📋</div><div><h4>Pre-Exam Setup</h4><p>Station prep, draping, sanitation, and organization — scored before a single service begins. Getting this right sets the tone for the entire exam.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">💅</div><div><h4>Monomer &amp; Polymer Over Tip</h4><p>Proper acrylic application over a nail tip — product ratio, technique, safety protocol, and sanitation all scored by the examiner.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">🩸</div><div><h4>Blood Exposure Incident</h4><p>Correct response procedure, documentation, and sanitation protocol. Most graduates aren't prepared for this one — Teresa makes sure you are.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">🧖</div><div><h4>Facial</h4><p>Client draping, skin prep, product application, and massage technique — all performed to Texas state board standards.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">🪒</div><div><h4>Waxing</h4><p>Application direction, removal technique, and post-wax care — safety and sanitation are heavily weighted in scoring.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">✂️</div><div><h4>Haircut</h4><p>Sectioning, elevation, tension, and finishing — performed to the exact standards examiners score. You'll know what a passing cut looks like.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">🌀</div><div><h4>Perm</h4><p>Rod selection, wrapping, solution application, processing, and neutralizing — every stage is graded.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">💨</div><div><h4>Blow Dry</h4><p>Tool handling, sectioning, and timed finishing technique — performed efficiently without sacrificing quality.</p></div></div>
+      <div class="teach-card"><div class="teach-icon">🧪</div><div><h4>Chemical (Relaxer)</h4><p>Base application, relaxer application, timing, neutralizing shampoo, and conditioning — safety precautions are critical throughout.</p></div></div>
+    </div>
+  </div>
+
+  <!-- WHY BOARD READY -->
+  <div class="why-section fade-up">
+    <span class="why-label">Why This Program Exists</span>
+    <h2 class="why-title">There Was No Dedicated<br>Board Prep for <em>DFW Graduates.</em></h2>
+    <p class="why-body">When Teresa looked at the options available to cosmetology graduates in the Dallas–Fort Worth area, she saw a gap. Apps. Books. YouTube videos. Generic study guides. None of them gave graduates the one thing that actually makes the difference on exam day: hands-on, expert-coached practice with someone who knows exactly how the Texas board grades.</p>
+    <p class="why-body">So she built it.</p>
+    <div class="why-inner-grid">
+      <div></div>
+      <ul class="why-points">
+        <li><span class="why-check">✓</span> No other DFW program offers in-person practical exam coaching specifically for cosmetology graduates</li>
+        <li><span class="why-check">✓</span> Small class sizes mean Teresa sees every student and gives personal feedback</li>
+        <li><span class="why-check">✓</span> Every section of the practical exam is covered — not just the basics</li>
+        <li><span class="why-check">✓</span> Board Ready Kit available so you walk in with exactly what you need</li>
+        <li><span class="why-check">✓</span> Written exam mock tests + AI study guide — FREE when you book the class ($27 standalone)</li>
+        <li><span class="why-check">✓</span> Built by someone who has been in beauty education for over three decades</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="abt-cta fade-up">
+    <h2>Ready to Work With Teresa?</h2>
+    <p>Join her next board prep class and get the written exam mock tests included free — or grab the written prep standalone for $27. Start with the free checklist anytime.</p>
+    <div class="cta-buttons">
+      <a href="https://boardreadybeauty.com/reserve-your-spot/" class="btn-white">Reserve My Spot — Written Prep Included Free →</a>
+      <a href="https://boardreadybeauty.com/written-exam-prep/" class="btn-outline-white">Written Exam Only — $27</a>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.35);margin-top:16px;text-align:center;">🎁 Written exam mock tests included free with every class booking · <a href="https://boardreadybeauty.com/free-checklist/" style="color:rgba(255,255,255,0.5);text-decoration:underline;">Or grab the free checklist to start today</a></p>
+  </div>
+
+</div>
+
+<script>
+const abtObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => abtObserver.observe(el));
+</script>
