@@ -1,0 +1,374 @@
+/*
+  ══════════════════════════════════════════════════════════
+  Board Ready Beauty — WooCommerce Cart Mobile Responsive
+  File: woocommerce-cart-mobile.css
+  Scope: screens under 768px only — desktop layout untouched
+  ══════════════════════════════════════════════════════════
+*/
+
+@media (max-width: 767px) {
+
+  /* ── TABLE: collapse from horizontal to vertical ── */
+
+  .woocommerce-cart table.shop_table,
+  .woocommerce-cart table.shop_table tbody,
+  .woocommerce-cart table.shop_table tr,
+  .woocommerce-cart table.shop_table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hide column header row — labels come from data-title instead */
+  .woocommerce-cart table.shop_table thead {
+    display: none;
+  }
+
+  /* Each cart row gets a card treatment */
+  .woocommerce-cart table.shop_table .cart_item {
+    border: 1px solid #ecdde5;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background: #fff;
+    position: relative;
+  }
+
+  /* Remove the default td borders inside each card */
+  .woocommerce-cart table.shop_table .cart_item td {
+    border: none;
+    padding: 6px 0;
+    text-align: left;
+  }
+
+  /* ── INLINE LABELS via data-title ── */
+  /* Show the column name as a small label before each value */
+
+  .woocommerce-cart table.shop_table .cart_item td::before {
+    content: attr(data-title) ": ";
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6b6170;
+    margin-right: 6px;
+  }
+
+  /* Cells that don't need a label prefix */
+  .woocommerce-cart table.shop_table .cart_item .product-remove::before,
+  .woocommerce-cart table.shop_table .cart_item .product-thumbnail::before {
+    display: none;
+  }
+
+  /* ── REMOVE BUTTON (trash icon) ── */
+  /* Float to top-right of card so it's always reachable */
+
+  .woocommerce-cart table.shop_table .cart_item .product-remove {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: auto;
+    text-align: right;
+    padding: 0;
+  }
+
+  .woocommerce-cart table.shop_table .cart_item .product-remove a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fbeef4;
+    color: #c8185a;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1;
+    transition: background 0.2s;
+  }
+
+  .woocommerce-cart table.shop_table .cart_item .product-remove a:hover {
+    background: #c8185a;
+    color: #fff;
+  }
+
+  /* ── PRODUCT THUMBNAIL ── */
+
+  .woocommerce-cart table.shop_table .cart_item .product-thumbnail {
+    padding-bottom: 4px;
+  }
+
+  .woocommerce-cart table.shop_table .cart_item .product-thumbnail img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* ── PRODUCT NAME ── */
+
+  .woocommerce-cart table.shop_table .cart_item .product-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e1a20;
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+
+  .woocommerce-cart table.shop_table .cart_item .product-name a {
+    color: #1e1a20;
+    text-decoration: none;
+  }
+
+  /* ── PRICE ── */
+
+  .woocommerce-cart table.shop_table .cart_item .product-price {
+    font-size: 14px;
+    color: #6b6170;
+  }
+
+  /* ── QUANTITY STEPPER ── */
+  /* Touch targets must be at least 44px */
+
+  .woocommerce-cart table.shop_table .cart_item .product-quantity {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .woocommerce-cart .quantity {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .woocommerce-cart .quantity .qty {
+    width: 56px;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ecdde5;
+    border-radius: 8px;
+    padding: 0 8px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    color: #1e1a20;
+  }
+
+  .woocommerce-cart .quantity .qty::-webkit-outer-spin-button,
+  .woocommerce-cart .quantity .qty::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Stepper +/- buttons (added by WooCommerce or theme JS) */
+  .woocommerce-cart .quantity .plus,
+  .woocommerce-cart .quantity .minus {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    background: #fbeef4;
+    border: 1px solid #ecdde5;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #c8185a;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: background 0.15s;
+  }
+
+  .woocommerce-cart .quantity .minus {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+  }
+
+  .woocommerce-cart .quantity .plus {
+    border-radius: 0 8px 8px 0;
+    border-left: none;
+  }
+
+  .woocommerce-cart .quantity .plus:active,
+  .woocommerce-cart .quantity .minus:active {
+    background: #c8185a;
+    color: #fff;
+  }
+
+  /* ── ROW SUBTOTAL ── */
+
+  .woocommerce-cart table.shop_table .cart_item .product-subtotal {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e1a20;
+    border-top: 1px dashed #ecdde5;
+    margin-top: 6px;
+    padding-top: 10px;
+  }
+
+  /* ── UPDATE CART / COUPON ROW ── */
+
+  .woocommerce-cart table.shop_table .actions {
+    display: block;
+    border-top: 1px solid #ecdde5;
+    padding: 16px 0 0;
+  }
+
+  .woocommerce-cart table.shop_table .actions td {
+    display: block;
+    padding: 0;
+  }
+
+  .woocommerce-cart table.shop_table .actions .coupon {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .woocommerce-cart table.shop_table .actions .coupon label {
+    display: none; /* label implied by placeholder */
+  }
+
+  .woocommerce-cart table.shop_table .actions .coupon #coupon_code {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #ecdde5;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+
+  .woocommerce-cart table.shop_table .actions .coupon .button {
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 999px;
+    background: #1e1a20;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .woocommerce-cart table.shop_table .actions [name="update_cart"] {
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    border: 1px solid #ecdde5;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b6170;
+    cursor: pointer;
+  }
+
+  /* ── CART TOTALS (collaterals) ── */
+
+  .woocommerce-cart .cart-collaterals {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-top: 8px;
+  }
+
+  .woocommerce-cart .cart-collaterals .cart_totals {
+    width: 100%;
+    float: none;
+  }
+
+  .woocommerce-cart .cart-collaterals .cart_totals table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .woocommerce-cart .cart-collaterals .cart_totals table th,
+  .woocommerce-cart .cart-collaterals .cart_totals table td {
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ecdde5;
+    text-align: left;
+  }
+
+  .woocommerce-cart .cart-collaterals .cart_totals table .order-total th,
+  .woocommerce-cart .cart-collaterals .cart_totals table .order-total td {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1e1a20;
+    border-bottom: none;
+    padding-top: 14px;
+  }
+
+  /* ── PROCEED TO CHECKOUT BUTTON ── */
+
+  .woocommerce-cart .wc-proceed-to-checkout {
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .woocommerce-cart .wc-proceed-to-checkout .checkout-button,
+  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    background: #c8185a !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    padding: 16px 24px !important;
+    border-radius: 999px !important;
+    border: none !important;
+    text-decoration: none !important;
+    transition: background 0.2s !important;
+    box-shadow: 0 8px 24px rgba(200, 24, 90, 0.25) !important;
+  }
+
+  .woocommerce-cart .wc-proceed-to-checkout .checkout-button:hover,
+  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+    background: #a01248 !important;
+  }
+
+  /* ── EXPRESS CHECKOUT / GOOGLE PAY ── */
+  /* Covers Stripe, PayPal, and WooPayments express button containers */
+
+  .woocommerce-cart .wc-stripe-express-checkout-element,
+  .woocommerce-cart #wc-stripe-express-checkout-wrapper,
+  .woocommerce-cart .woo-pp-button-container,
+  .woocommerce-cart .wc-express-checkout-wrapper,
+  .woocommerce-cart .wcpay-express-checkout-wrapper,
+  .woocommerce-cart #wcpay-express-checkout-wrapper,
+  .woocommerce-cart .gpay-button-container,
+  .woocommerce-cart #wc-stripe-payment-request-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .woocommerce-cart .wc-stripe-express-checkout-element button,
+  .woocommerce-cart #wc-stripe-express-checkout-wrapper button,
+  .woocommerce-cart .woo-pp-button-container button,
+  .woocommerce-cart .wc-express-checkout-wrapper button,
+  .woocommerce-cart .gpay-button {
+    width: 100% !important;
+    min-height: 48px !important;
+    border-radius: 999px !important;
+  }
+
+  /* Divider between express checkout and standard checkout */
+  .woocommerce-cart .wc-stripe-express-checkout-section .wc-stripe-express-checkout-divider,
+  .woocommerce-cart .wc-express-checkout-divider {
+    margin: 16px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #6b6170;
+  }
+
+} /* end @media (max-width: 767px) */
