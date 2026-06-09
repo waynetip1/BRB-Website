@@ -1,345 +1,378 @@
-<!--
-  ══════════════════════════════════════════════════════════
-  SEO — RANK MATH SETTINGS FOR THIS PAGE
-  Set these in Rank Math (WordPress admin → Rank Math → Edit Snippet):
-
-  Title:       PassBoard Texas Cosmetology Written Exam Prep | $29.99
-  Description: 49% of Texas cosmetology students failed the written exam in 2025. PassBoard: 600 practice questions, 30 focused exams, AI feedback, personalized study guide. $29.99. Pass first.
-  Keywords:    Texas cosmetology written exam prep, PSI exam practice test, PassBoard cosmetology, TDLR written exam study guide, cosmetology AI study guide
-
-  Also set in WordPress Page settings:
-  - Make sure GeneratePress page title header is HIDDEN
-  ══════════════════════════════════════════════════════════
--->
 <style>
-:root{--rose:#c8185a;--rose-dark:#a01248;--rose-light:#fbeef4;--gold:#c49a2a;--gold-light:#fdf6e3;--cream:#fdf9f6;--charcoal:#1e1a20;--muted:#6b6170;--border:#ecdde5;--white:#ffffff}
-html,body{max-width:100%!important;overflow-x:hidden!important}
-*{min-width:0;box-sizing:border-box}
-img{max-width:100%;height:auto}
-.page .entry-content,.entry-content,.inside-article{padding:0!important;margin:0!important;max-width:100%!important;overflow-x:hidden!important}
-.inside-article{padding:0!important}
-.site-content .inside-article>*{margin:0!important}
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
-.btn-gold{display:block;text-align:center;background:var(--gold);color:var(--white);text-decoration:none;font-weight:700;font-size:16px;padding:16px 28px;border-radius:999px;transition:all .2s}
-.btn-gold:hover{background:#a07e1e;transform:translateY(-1px)}
-.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--rose);color:var(--white);text-decoration:none;font-weight:600;font-size:16px;padding:16px 28px;border-radius:999px;transition:all .2s;box-shadow:0 8px 24px rgba(200,24,90,0.25)}
-.btn-primary:hover{background:var(--rose-dark);transform:translateY(-1px);color:var(--white)}
-.btn-white{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--rose);text-decoration:none;font-weight:700;font-size:16px;padding:16px 36px;border-radius:999px;transition:all .2s}
-.btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.2)}
-.section-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--rose);margin-bottom:12px;padding:5px 12px;background:var(--rose-light);border-radius:999px;border:1px solid rgba(200,24,90,0.15)}
-
-/* STICKY BAR */
-.we-sticky{position:fixed;bottom:0;left:0;right:0;background:var(--charcoal);border-top:1px solid rgba(200,24,90,0.3);padding:12px 20px;z-index:999;display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(100%);transition:transform .3s ease;box-shadow:0 -4px 24px rgba(0,0,0,0.25)}
-.we-sticky.visible{transform:translateY(0)}
-.we-sticky-left{display:flex;align-items:center;gap:12px}
-.we-sticky-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white)}
-.we-sticky-price{font-size:13px;color:var(--gold);font-weight:700}
-.we-sticky-btn{display:inline-block;padding:10px 22px;background:var(--rose);color:var(--white);text-decoration:none;border-radius:8px;font-size:14px;font-weight:600;white-space:nowrap;transition:background .2s}
-.we-sticky-btn:hover{background:var(--rose-dark)}
-
-/* HERO */
-.we-hero{background:var(--charcoal);padding:64px 18px 80px;position:relative;overflow:hidden}
-.we-hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(200,24,90,0.10),transparent 65%);pointer-events:none}
-.we-hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;display:flex;flex-direction:column;gap:32px}
-.we-hero-label{font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.we-hero-label::before{content:'';width:28px;height:1px;background:var(--gold)}
-.we-hero h1{font-family:'Playfair Display',serif!important;font-size:clamp(30px,6vw,54px)!important;line-height:1.1!important;color:var(--white)!important;margin-bottom:16px!important;letter-spacing:-0.02em!important}
-.we-hero h1 em{font-style:italic;color:#f9a8c0}
-.we-hero-sub{font-size:16px;line-height:1.75;color:rgba(255,255,255,0.65);max-width:540px;font-weight:300;margin-bottom:24px}
-
-/* STAT ROW */
-.stat-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
-.stat-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.8);font-size:12px;font-weight:600;padding:7px 14px;border-radius:999px}
-.stat-chip strong{color:var(--gold)}
-.stat-src{font-size:10px;color:rgba(255,255,255,0.35);font-weight:400}
-
-/* BUY CARD */
-.we-buy-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:28px 24px;max-width:380px}
-.we-buy-card-badge{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.we-buy-card-badge::before{content:'✦'}
-.we-buy-card h3{font-family:'Playfair Display',serif!important;font-size:18px!important;color:var(--white)!important;margin-bottom:14px!important}
-.we-buy-checklist{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:7px}
-.we-buy-checklist li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
-.we-buy-checklist li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px}
-.we-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
-.we-price{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;color:var(--white)}
-.we-price sup{font-size:18px;vertical-align:top;margin-top:10px;display:inline-block}
-.we-price-was{font-size:14px;color:rgba(255,255,255,0.35);text-decoration:line-through}
-.we-price-note{font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:18px}
-
-/* FEATURES SECTION */
-.we-section{padding:52px 18px}
-.we-inner{max-width:1100px;margin:0 auto}
-.we-features-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:32px}
-.we-feature{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:20px;display:flex;gap:14px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
-.we-feature:hover{border-color:var(--rose);box-shadow:0 4px 20px rgba(200,24,90,0.08)}
-.we-feat-icon{font-size:24px;flex-shrink:0}
-.we-feature h4{font-size:15px;font-weight:700;color:var(--charcoal);margin-bottom:4px}
-.we-feature p{font-size:13px;color:var(--muted);line-height:1.65}
-.we-feature-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--rose);background:var(--rose-light);padding:2px 8px;border-radius:999px;margin-top:6px}
-
-/* SCIENCE */
-.we-dark{background:var(--charcoal);padding:52px 18px}
-.we-dark-inner{max-width:1100px;margin:0 auto}
-.science-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:28px}
-.sci-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:16px 18px;display:flex;gap:12px}
-.sci-num{width:28px;height:28px;border-radius:50%;background:var(--rose);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.sci-card h4{font-size:14px;font-weight:700;color:var(--white);margin-bottom:3px}
-.sci-card p{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6}
-.sci-card cite{font-size:11px;color:rgba(200,24,90,0.8);font-style:normal;display:block;margin-top:4px}
-
-/* MATH STAT */
-.math-showcase{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;margin-top:28px;text-align:center}
-.math-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:var(--rose);line-height:1}
-.math-label{font-size:13px;color:rgba(255,255,255,0.6);margin-top:6px;line-height:1.5}
-.math-sub{font-size:11px;color:rgba(255,255,255,0.3);margin-top:6px}
-
-/* TOPICS */
-.topics-section{background:var(--cream);padding:52px 18px}
-.topics-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
-.topic-item{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--charcoal);font-weight:500}
-.topic-dot{width:8px;height:8px;border-radius:50%;background:var(--rose);flex-shrink:0}
-.topic-pct{margin-left:auto;font-size:11px;color:var(--muted);font-weight:400}
-
-/* GUARANTEE */
-.guarantee-section{padding:52px 18px;background:var(--white)}
-.guarantee-inner{max-width:640px;margin:0 auto}
-.guarantee-card{background:var(--rose-light);border:1.5px solid var(--border);border-radius:20px;padding:32px 28px;text-align:center}
-.guarantee-icon{font-size:40px;margin-bottom:16px}
-.guarantee-card h3{font-family:'Playfair Display',serif!important;font-size:22px!important;color:var(--charcoal)!important;margin-bottom:12px!important}
-.guarantee-card p{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:14px}
-.guarantee-terms{font-size:11px;color:var(--muted);font-style:italic;border-top:1px solid var(--border);padding-top:12px;margin-top:12px}
-
-/* FINAL CTA */
-.brb-final-cta{background:linear-gradient(135deg,var(--rose-dark) 0%,var(--rose) 100%);padding:64px 24px;text-align:center}
-.brb-final-cta h2{font-family:'Playfair Display',serif!important;font-size:clamp(26px,5vw,40px)!important;color:var(--white)!important;margin-bottom:14px!important}
-.brb-final-cta p{color:rgba(255,255,255,0.8);font-size:16px;max-width:520px;margin:0 auto 28px;line-height:1.7}
-
-@media(min-width:768px){
-  .we-hero-inner{flex-direction:row;align-items:flex-start;gap:40px}
-  .we-hero-content{flex:1.3}
-  .we-buy-card{flex-shrink:0;width:340px;position:sticky;top:90px}
-  .we-features-grid{grid-template-columns:1fr 1fr}
-  .science-grid{grid-template-columns:1fr 1fr}
-  .topics-grid{grid-template-columns:repeat(3,1fr)}
-}
+  .pb-wrap {
+    font-family: 'DM Sans', sans-serif;
+    color: #1e1a20;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .pb-hero {
+    text-align: center;
+    padding: 48px 0 32px;
+  }
+  .pb-hero-eyebrow {
+    display: inline-block;
+    background: #fdf0f2;
+    color: #c8185a;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+  .pb-hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    line-height: 1.2;
+    margin: 0 0 16px;
+    color: #1e1a20;
+  }
+  .pb-hero h1 em {
+    color: #c8185a;
+    font-style: italic;
+  }
+  .pb-hero-sub {
+    font-size: 1rem;
+    color: #5a4a50;
+    max-width: 520px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+  }
+  .pb-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .pb-stat { text-align: center; }
+  .pb-stat-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #c8185a;
+    line-height: 1;
+  }
+  .pb-stat-label {
+    font-size: 0.72rem;
+    color: #7a5560;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+  .pb-section-label {
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a5560;
+    margin-bottom: 16px;
+  }
+  .pb-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 420px) {
+    .pb-cards { grid-template-columns: 1fr; }
+  }
+  .pb-card {
+    border-radius: 16px;
+    padding: 24px 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pb-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  .pb-card-icon { font-size: 1.8rem; line-height: 1; }
+  .pb-card-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .pb-card-qs {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+  }
+  .pb-card-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+  }
+  .pb-card-cta {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .pb-card-cosmo { background: linear-gradient(135deg, #c8185a 0%, #a01248 100%); }
+  .pb-card-barber { background: linear-gradient(135deg, #1B2A4A 0%, #2d4270 100%); }
+  .pb-card-esti   { background: linear-gradient(135deg, #C9717A 0%, #9E5A6B 100%); }
+  .pb-card-nails  { background: linear-gradient(135deg, #6B2D5E 0%, #A0306A 100%); }
+  .pb-features {
+    background: #fdf9f6;
+    border-radius: 20px;
+    padding: 36px 24px;
+    margin-bottom: 32px;
+  }
+  .pb-features h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 8px;
+  }
+  .pb-features-sub {
+    text-align: center;
+    color: #7a5560;
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+  }
+  .pb-feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 480px) {
+    .pb-feature-list { grid-template-columns: 1fr; }
+  }
+  .pb-feature {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .pb-feature-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .pb-feature-text strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1e1a20;
+    margin-bottom: 2px;
+  }
+  .pb-feature-text span {
+    font-size: 0.8rem;
+    color: #7a5560;
+    line-height: 1.4;
+  }
+  .pb-guarantee {
+    border: 2px solid #c8185a;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .pb-guarantee-badge { font-size: 2rem; margin-bottom: 8px; }
+  .pb-guarantee h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    color: #c8185a;
+    margin: 0 0 12px;
+  }
+  .pb-guarantee p {
+    font-size: 0.9rem;
+    color: #5a4a50;
+    line-height: 1.6;
+    margin: 0 0 8px;
+  }
+  .pb-guarantee-fine {
+    font-size: 0.72rem;
+    color: #aaa;
+    line-height: 1.5;
+  }
+  .pb-cta {
+    text-align: center;
+    padding: 36px 0 48px;
+  }
+  .pb-cta h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  .pb-cta p { color: #7a5560; font-size: 0.9rem; margin-bottom: 24px; }
+  .pb-cta-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @media (max-width: 420px) {
+    .pb-cta-cards { grid-template-columns: 1fr; }
+  }
+  .pb-cta-btn {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: opacity 0.15s;
+  }
+  .pb-cta-btn:hover { opacity: 0.88; }
+  .pb-btn-cosmo { background: #c8185a; color: #fff; }
+  .pb-btn-barber { background: #1B2A4A; color: #fff; }
+  .pb-btn-esti   { background: #C9717A; color: #fff; }
+  .pb-btn-nails  { background: #6B2D5E; color: #fff; }
+  .pb-disclaimer {
+    text-align: center;
+    font-size: 0.72rem;
+    color: #bbb;
+    margin-top: 24px;
+    line-height: 1.5;
+  }
 </style>
 
-<!-- STICKY BAR -->
-<div class="we-sticky" id="we-sticky">
-  <div class="we-sticky-left">
-    <div>
-      <div class="we-sticky-title">PassBoard Written Exam Prep</div>
-      <div class="we-sticky-price">$29.99 — Instant Access</div>
+<div class="pb-wrap">
+  <div class="pb-hero">
+    <div class="pb-hero-eyebrow">Texas PSI Written Exam Prep</div>
+    <h1>Your license is<br>one exam away.<br><em>Let's make sure you pass it.</em></h1>
+    <p class="pb-hero-sub">PassBoard is built exclusively for Texas PSI written exams - not a generic 50-state course. Every question aligned to the official TDLR content outline. Available in English and Spanish.</p>
+    <div class="pb-stats">
+      <div class="pb-stat">
+        <div class="pb-stat-num">49%</div>
+        <div class="pb-stat-label">TX cosmo pass rate</div>
+      </div>
+      <div class="pb-stat">
+        <div class="pb-stat-num">$55</div>
+        <div class="pb-stat-label">Per PSI retake</div>
+      </div>
+      <div class="pb-stat">
+        <div class="pb-stat-num">4</div>
+        <div class="pb-stat-label">License types covered</div>
+      </div>
     </div>
   </div>
-  <a href="https://boardreadybeauty.com/product/board-ready-written-exam-prep/" class="we-sticky-btn">Get Instant Access →</a>
+
+  <p class="pb-section-label">Choose your license type</p>
+  <div class="pb-cards">
+    <a href="https://boardreadybeauty.com/product/passboard-texas-psi-cosmetology-written-exam-prep/" class="pb-card pb-card-cosmo">
+      <div class="pb-card-icon">💄</div>
+      <div class="pb-card-title">Cosmetology Operator</div>
+      <div class="pb-card-qs">600 questions - 10 full exams</div>
+      <div class="pb-card-price">$39.95</div>
+      <div class="pb-card-cta">Start studying tonight -></div>
+    </a>
+    <a href="https://boardreadybeauty.com/product/passboard-texas-psi-barber-written-exam-prep/" class="pb-card pb-card-barber">
+      <div class="pb-card-icon">✂️</div>
+      <div class="pb-card-title">Class A Barber</div>
+      <div class="pb-card-qs">525 questions - 10 full exams</div>
+      <div class="pb-card-price">$39.95</div>
+      <div class="pb-card-cta">Start studying tonight -></div>
+    </a>
+    <a href="https://boardreadybeauty.com/product/passboard-texas-psi-esthetician-written-exam-prep-2/" class="pb-card pb-card-esti">
+      <div class="pb-card-icon">🌿</div>
+      <div class="pb-card-title">Esthetician</div>
+      <div class="pb-card-qs">525 questions - 10 full exams</div>
+      <div class="pb-card-price">$39.95</div>
+      <div class="pb-card-cta">Start studying tonight -></div>
+    </a>
+    <a href="https://boardreadybeauty.com/product/passboard-texas-psi-manicurist-written-exam-prep/" class="pb-card pb-card-nails">
+      <div class="pb-card-icon">💅</div>
+      <div class="pb-card-title">Manicurist</div>
+      <div class="pb-card-qs">420 questions - 10 full exams</div>
+      <div class="pb-card-price">$34.95</div>
+      <div class="pb-card-cta">Start studying tonight -></div>
+    </a>
+  </div>
+
+  <div class="pb-features">
+    <h2>Everything you need.<br>Nothing you don't.</h2>
+    <p class="pb-features-sub">Every PassBoard license includes the full study system.</p>
+    <div class="pb-feature-list">
+      <div class="pb-feature">
+        <div class="pb-feature-icon">📝</div>
+        <div class="pb-feature-text">
+          <strong>Full Practice Exams</strong>
+          <span>Timed, PSI-weighted. Real exam pressure before it counts.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">🎯</div>
+        <div class="pb-feature-text">
+          <strong>Pre-Test Diagnostic</strong>
+          <span>Find your weak spots first. No wasted study time.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">🔍</div>
+        <div class="pb-feature-text">
+          <strong>Focused Topic Exams</strong>
+          <span>Drill any topic with fresh, non-overlapping question sets.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">⚡</div>
+        <div class="pb-feature-text">
+          <strong>Real-Time AI Feedback</strong>
+          <span>Every answer explained in plain English. Learn as you go.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">🧠</div>
+        <div class="pb-feature-text">
+          <strong>Adaptive Reinforcement</strong>
+          <span>Missed a question? PassBoard drills it until it sticks.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">📖</div>
+        <div class="pb-feature-text">
+          <strong>Personalized Study Guide</strong>
+          <span>Generated from your results. Download as PDF.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">🇲🇽</div>
+        <div class="pb-feature-text">
+          <strong>English &amp; Spanish</strong>
+          <span>Full app available in both languages.</span>
+        </div>
+      </div>
+      <div class="pb-feature">
+        <div class="pb-feature-icon">📱</div>
+        <div class="pb-feature-text">
+          <strong>Any Device</strong>
+          <span>Phone, tablet, or desktop. Study anywhere.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-guarantee">
+    <div class="pb-guarantee-badge">🛡️</div>
+    <h3>The PassBoard Pass Guarantee</h3>
+    <p>Complete one full practice exam within 7 days of purchase. Sit for the real PSI exam. If you don't pass - we refund every dollar. No long forms. No argument. We back what we built.</p>
+    <p class="pb-guarantee-fine">7-day request window from purchase date. Requires completion of one full PassBoard practice exam and proof of PSI exam attempt. One refund per customer.</p>
+  </div>
+
+  <div class="pb-cta">
+    <h2>Your license is waiting.</h2>
+    <p>Choose your exam and start studying tonight.</p>
+    <div class="pb-cta-cards">
+      <a href="https://boardreadybeauty.com/product/passboard-texas-psi-cosmetology-written-exam-prep/" class="pb-cta-btn pb-btn-cosmo">💄 Cosmetology</a>
+      <a href="https://boardreadybeauty.com/product/passboard-texas-psi-barber-written-exam-prep/" class="pb-cta-btn pb-btn-barber">✂️ Barber</a>
+      <a href="https://boardreadybeauty.com/product/passboard-texas-psi-esthetician-written-exam-prep-2/" class="pb-cta-btn pb-btn-esti">🌿 Esthetician</a>
+      <a href="https://boardreadybeauty.com/product/passboard-texas-psi-manicurist-written-exam-prep/" class="pb-cta-btn pb-btn-nails">💅 Manicurist</a>
+    </div>
+    <p class="pb-disclaimer">PassBoard questions are aligned with the official PSI/TDLR content outline. PassBoard is not affiliated with or endorsed by TDLR or PSI Services LLC.</p>
+  </div>
 </div>
-
-<!-- HERO -->
-<section class="we-hero">
-  <div class="we-hero-inner">
-    <div class="we-hero-content fade-up">
-      <div class="we-hero-label">PassBoard — Texas PSI Cosmetology Written Exam Prep</div>
-      <h1>The Written Exam<br>Just Got a Lot<br><em>Less Scary.</em></h1>
-
-      <div class="stat-row">
-        <div class="stat-chip"><strong>49%</strong> pass rate <span class="stat-src">TDLR FY2025</span></div>
-        <div class="stat-chip"><strong>10,868</strong> students failed last year</div>
-        <div class="stat-chip"><strong>$55</strong> per PSI retake</div>
-      </div>
-
-      <p class="we-hero-sub">PassBoard is AI-powered written exam prep built specifically for the Texas PSI cosmetology operator exam. 600 practice questions. 10 full practice exams. 30 focused topic exams. A 20-question pre-test diagnostic. Real-time AI feedback. A personalized study guide built from your actual results. $29.99. Pass first.</p>
-
-      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px">
-        <a href="https://boardreadybeauty.com/product/board-ready-written-exam-prep/" class="btn-gold" style="display:inline-block;padding:16px 28px">Start Studying Tonight — $29.99 →</a>
-        <a href="/reserve-your-spot/" style="display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,0.6);font-size:14px;text-decoration:none;padding:16px 0">Or book the class and get PassBoard free →</a>
-      </div>
-    </div>
-
-    <div class="we-buy-card fade-up">
-      <div class="we-buy-card-badge">PassBoard — Instant Access</div>
-      <h3>Written Exam Prep</h3>
-      <ul class="we-buy-checklist">
-        <li>600 practice questions — all Texas PSI specific</li>
-        <li>10 full practice exams (100Q, 120 min, PSI format)</li>
-        <li>30 focused topic exams (10 topics × 3 exams × 20Q)</li>
-        <li>20Q pre-test diagnostic — find your weak spots first</li>
-        <li>Real-time AI feedback on every answer</li>
-        <li>Adaptive reinforcement mode</li>
-        <li>Easy / Standard / Hard difficulty</li>
-        <li>Personalized AI study guide built from your results</li>
-        <li>Download study guide as PDF</li>
-        <li>Works on phone, tablet, or desktop</li>
-        <li>Pass Guarantee included</li>
-      </ul>
-      <div class="we-price-row">
-        <div class="we-price"><sup>$</sup>47</div>
-      </div>
-      <div class="we-price-note">One-time purchase · No subscription · Instant access</div>
-      <a href="https://boardreadybeauty.com/product/board-ready-written-exam-prep/" class="btn-gold">Start Studying Tonight — $29.99 →</a>
-      <div style="margin-top:14px;background:rgba(196,154,42,0.15);border:1px solid rgba(196,154,42,0.25);border-radius:10px;padding:11px 14px;text-align:center">
-        <span style="font-size:12px;color:var(--gold);font-weight:600">🎁 Booking the $150 practical class? PassBoard is included FREE.</span>
-        <a href="/reserve-your-spot/" style="display:block;margin-top:5px;font-size:11px;color:rgba(255,255,255,0.4);text-decoration:underline">Join the class waitlist →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="we-section" id="features">
-  <div class="we-inner">
-    <div class="fade-up">
-      <span class="section-label">What's Inside PassBoard</span>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,38px);color:var(--charcoal);margin-bottom:14px">Everything You Need. <em style="color:var(--rose);font-style:italic">Nothing You Don't.</em></h2>
-      <p style="font-size:16px;color:var(--muted);max-width:580px;line-height:1.75;margin-bottom:0">PassBoard isn't just questions. It's a complete learning system built to get you to 70% — and keep you there.</p>
-    </div>
-    <div class="we-features-grid fade-up">
-      <div class="we-feature">
-        <div class="we-feat-icon">🏦</div>
-        <div>
-          <h4>600-Question Bank</h4>
-          <p>600 original questions written and reviewed against TDLR cosmetology standards. Every question is Texas PSI specific. 10 topic areas proportionally weighted to match the actual exam — nothing wasted.</p>
-          <div class="we-feature-tag">All Texas PSI specific</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">📝</div>
-        <div>
-          <h4>10 Full Practice Exams</h4>
-          <p>100 questions, 120-minute timer — identical to the real PSI exam. Every exam draws from the 600-question bank. No two exams are ever the same.</p>
-          <div class="we-feature-tag">Exact PSI format and timing</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">🎯</div>
-        <div>
-          <h4>30 Focused Topic Exams</h4>
-          <p>10 topics × 3 exams × 20 questions each — zero repeats. Go deep on your weakest areas without seeing the same questions twice. 300 focused questions total.</p>
-          <div class="we-feature-tag">10 topics · 300 focused questions</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">🔍</div>
-        <div>
-          <h4>20Q Pre-Test Diagnostic</h4>
-          <p>Start here. The diagnostic identifies your weak areas before you begin — so your study time goes where it matters most from day one.</p>
-          <div class="we-feature-tag">Know your gaps immediately</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">⚡</div>
-        <div>
-          <h4>Real-Time AI Feedback</h4>
-          <p>Toggle on Feedback Mode. After each answer: see if you were right, get a plain-English explanation, and receive a memory tip to make it stick. Learn as you go.</p>
-          <div class="we-feature-tag">Immediate explanations</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">🧠</div>
-        <div>
-          <h4>Adaptive Reinforcement Mode</h4>
-          <p>Get an answer wrong? PassBoard automatically serves reinforcement questions on that topic until the concept clicks. It's like having a tutor watch every answer.</p>
-          <div class="we-feature-tag">Smart. Personalized.</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">📊</div>
-        <div>
-          <h4>Easy / Standard / Hard Difficulty</h4>
-          <p>Start with foundational concepts on Easy mode. Advance to Hard — the nuanced, similar-answer questions that show up on the real PSI exam. Build up as you go.</p>
-          <div class="we-feature-tag">3 difficulty levels</div>
-        </div>
-      </div>
-      <div class="we-feature">
-        <div class="we-feat-icon">📖</div>
-        <div>
-          <h4>Personalized AI Study Guide</h4>
-          <p>After your first full exam, PassBoard generates a comprehensive study guide based on your actual results — plain-English explanations, memory tricks, exam warnings, and a study schedule. Download as PDF.</p>
-          <div class="we-feature-tag">PDF download included</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SCIENCE -->
-<section class="we-dark">
-  <div class="we-dark-inner">
-    <div class="fade-up" style="text-align:center">
-      <span class="section-label" style="background:rgba(200,24,90,0.2);border-color:rgba(200,24,90,0.3);color:#f9a8c0">The Science Behind PassBoard</span>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,38px);color:var(--white);margin-bottom:12px">Why PassBoard Works<br><em style="color:#f9a8c0;font-style:italic">When Flashcards Don't</em></h2>
-      <p style="font-size:15px;color:rgba(255,255,255,0.55);max-width:540px;margin:0 auto 8px;line-height:1.7">Most students study by rereading notes until they feel familiar. Familiarity is not memory. PassBoard is built around six evidence-based learning techniques — the same methods used by top medical and bar exam programs.</p>
-    </div>
-    <div class="science-grid fade-up">
-      <div class="sci-card"><div class="sci-num">1</div><div><h4>Retrieval Practice</h4><p>Answering questions forces active recall — building 2× stronger memory than passive rereading.</p><cite>Roediger &amp; Butler, 2011 — Perspectives on Psychological Science</cite></div></div>
-      <div class="sci-card"><div class="sci-num">2</div><div><h4>Spaced Repetition</h4><p>Study schedule spaces sessions to catch information right before it fades — the most efficient study method known to science.</p><cite>Cepeda et al., 2006 — Psychological Science</cite></div></div>
-      <div class="sci-card"><div class="sci-num">3</div><div><h4>Elaborative Interrogation</h4><p>Every explanation answers "why" — because understanding why something is true makes it 2-3× more memorable than memorizing it.</p><cite>Pressley et al., 1992</cite></div></div>
-      <div class="sci-card"><div class="sci-num">4</div><div><h4>Dual Coding</h4><p>Real-world analogies pair verbal explanations with visual mental images — two pathways to every piece of information.</p><cite>Paivio, 1991</cite></div></div>
-      <div class="sci-card"><div class="sci-num">5</div><div><h4>Interleaving</h4><p>Questions from different topics are mixed, matching PSI exam conditions and eliminating "topic tunnel vision."</p><cite>Kornell &amp; Bjork, 2008 — Psychological Science</cite></div></div>
-      <div class="sci-card"><div class="sci-num">6</div><div><h4>Metacognitive Monitoring</h4><p>Topic mastery ratings show exactly what you know vs. don't know — so you study what matters, not what feels comfortable.</p><cite>Dunlosky et al., 2013 — Psych Science in the Public Interest</cite></div></div>
-    </div>
-    <div class="math-showcase fade-up">
-      <div class="math-num">10¹¹⁶+</div>
-      <div class="math-label">Unique practice exam combinations possible from the 600-question bank</div>
-      <div class="math-sub">C(600,100) — more combinations than particles in the observable universe. No two exams are ever the same.</div>
-    </div>
-  </div>
-</section>
-
-<!-- TOPICS -->
-<section class="topics-section">
-  <div style="max-width:1100px;margin:0 auto">
-    <div class="fade-up">
-      <span class="section-label">What's Covered</span>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,36px);color:var(--charcoal);margin-bottom:12px">All 10 PSI Exam Topics. <em style="color:var(--rose);font-style:italic">Proportionally Weighted.</em></h2>
-      <p style="font-size:15px;color:var(--muted);max-width:560px;line-height:1.75;margin-bottom:0">Every PassBoard full exam draws questions proportionally from all 10 topic areas — exactly matching the PSI exam's topic distribution. The 30 focused topic exams let you go deep on any topic you need extra work on.</p>
-    </div>
-    <div class="topics-grid fade-up">
-      <div class="topic-item"><span class="topic-dot"></span>Sanitation &amp; Infection Control<span class="topic-pct">15Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Hair Care &amp; Chemistry<span class="topic-pct">15Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Scalp &amp; Hair Disorders<span class="topic-pct">8Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Skin Care &amp; Anatomy<span class="topic-pct">10Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Nail Care<span class="topic-pct">8Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Chemical Services<span class="topic-pct">10Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Texas TDLR Laws &amp; Regulations<span class="topic-pct">10Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Coloring &amp; Lightening<span class="topic-pct">8Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Haircutting &amp; Styling<span class="topic-pct">8Q</span></div>
-      <div class="topic-item"><span class="topic-dot"></span>Anatomy &amp; Physiology<span class="topic-pct">8Q</span></div>
-    </div>
-    <div style="margin-top:20px;background:var(--rose-light);border:1px solid rgba(200,24,90,0.15);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--rose-dark);text-align:center">
-      📊 Topic weights based on the PSI Texas Cosmetology Operator Candidate Information Bulletin. PassBoard is not affiliated with or endorsed by TDLR or PSI Services LLC.
-    </div>
-  </div>
-</section>
-
-<!-- GUARANTEE -->
-<section class="guarantee-section">
-  <div class="guarantee-inner fade-up">
-    <div class="guarantee-card">
-      <div class="guarantee-icon">🛡️</div>
-      <h3>The PassBoard Pass Guarantee</h3>
-      <p>We built PassBoard to pass. If you complete one full practice exam within 7 days of purchase, sit for the real PSI written exam, and don't pass — we'll refund every dollar. No long forms. No games.</p>
-      <p style="font-size:14px;color:var(--rose-dark);font-weight:600">We back what we built.</p>
-      <div class="guarantee-terms">7-day request window from purchase date. Refund requires: completion of one full PassBoard practice exam + proof of PSI exam attempt. One refund per customer. See full Terms of Use at boardreadybeauty.com/terms.</div>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="brb-final-cta">
-  <h2>Study Smart. <em style="font-style:italic">Pass First.</em></h2>
-  <p>Only 49% of Texas cosmetology students passed the written exam in 2025. PassBoard was built to put you in the passing half — with 600 questions, 10 full exams, and real-time feedback built for the Texas PSI.</p>
-  <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
-    <a href="https://boardreadybeauty.com/product/board-ready-written-exam-prep/" class="btn-white">Start Studying Tonight — $29.99 →</a>
-    <a href="/reserve-your-spot/" style="color:rgba(255,255,255,0.6);font-size:14px;text-decoration:underline">Book the $150 practical class and get PassBoard FREE →</a>
-  </div>
-</section>
-
-<script>
-const _brbObs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible') }), {threshold:0.08});
-document.querySelectorAll('.fade-up').forEach(el => _brbObs.observe(el));
-const sticky = document.getElementById('we-sticky');
-window.addEventListener('scroll', () => { sticky.classList.toggle('visible', window.scrollY > 400) });
-</script>

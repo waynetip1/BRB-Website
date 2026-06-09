@@ -1,8 +1,8 @@
 /*
   ══════════════════════════════════════════════════════════
-  Board Ready Beauty — WooCommerce Cart Mobile Responsive
+  Board Ready Beauty - WooCommerce Cart Mobile Responsive
   File: woocommerce-cart-mobile.css
-  Scope: screens under 768px only — desktop layout untouched
+  Scope: screens under 768px only - desktop layout untouched
   ══════════════════════════════════════════════════════════
 */
 
@@ -19,7 +19,7 @@
     box-sizing: border-box;
   }
 
-  /* Hide column header row — labels come from data-title instead */
+  /* Hide column header row - labels come from data-title instead */
   .woocommerce-cart table.shop_table thead {
     display: none;
   }
